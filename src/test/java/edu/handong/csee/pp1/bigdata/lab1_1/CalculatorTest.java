@@ -43,6 +43,5 @@ public class CalculatorTest {
 		Calculator myCalc = new Calculator();
 		assertEquals(myCalc.divide(1, 1),1, 0.00000001);
 		assertEquals(myCalc.divide(2, 0),Double.NaN, 0.00000001);
-//		assertEquals(myCalc.divide(2, 0),2, 0.00000001);
 	}
 }
