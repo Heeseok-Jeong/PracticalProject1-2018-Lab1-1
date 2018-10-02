@@ -26,7 +26,7 @@ public class Calculator {
 	// We call all variables defined in this area as member variables or fields.
 
 	// static decides how this variable can be accessed and maintained.
-	// Static variables are shared by all objects crated by this class definition.
+	// Static variables are shared by all objects created by this class definition.
 	static int countForAnyCompution = 0;
 	// private member variable is used by only one object can can't be shared by other objects
 	//
@@ -75,11 +75,11 @@ public class Calculator {
 	
 	/**
 	 * @param prefix
-	 * @param result
+	 * @param d
 	 * This method prints out computation result.
 	 */
-	void print(String prefix, int result) {
-		System.out.println(prefix + " " + result);
+	void print(String prefix, double d) {
+		System.out.println(prefix + " " + d);
 	}
 
 	int sum(int first, int second) {
@@ -100,9 +100,10 @@ public class Calculator {
 		return first * second;
 	}
 
-	int divide(int first, int second) {
+	double divide(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
+		if(second == 0) return Double.NaN;
 		return first / second;
 	}
 
