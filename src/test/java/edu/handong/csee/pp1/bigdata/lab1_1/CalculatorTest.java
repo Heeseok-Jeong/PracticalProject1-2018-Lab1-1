@@ -11,7 +11,7 @@ public class CalculatorTest {
 		String[] args = {"2", "3"};
 		Calculator.main(args);
 		// assertEquals compares the result of an method call with the expected result.
-		assertEquals(Calculator.getCount(),4);
+		assertEquals(Calculator.getCount(),5);
 	}
 	
 	@Test
@@ -28,7 +28,8 @@ public class CalculatorTest {
 	
 	@Test
 	public void testMod() {
-		// TODO Complete this test case
+		Calculator myCalc = new Calculator();
+		assertEquals(myCalc.mod(5, 3),2);
 	}
 
 	@Test
